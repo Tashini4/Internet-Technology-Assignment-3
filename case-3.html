@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>case-3</title>
+    <link rel="stylesheet" href="assest/style/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 200px;
+        }
+
+        section>#circle1{
+            background:gray;
+            height: 200px;
+            width: 200px;
+            border: 3px solid gray;
+            border-radius:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section>#circle1>#circle2{
+            background: red;
+            height: 180px;
+            width: 180px;
+            border: solid 3px red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        section>#circle1>#circle2>#circle3{
+            background: purple;
+            height: 160px;
+            width: 160px;
+            border: solid 3px purple;
+            border-radius: 50%;
+
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+    <div id="circle1">
+        <div id="circle2">
+            <div id="circle3">Hello</div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
