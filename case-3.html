@@ -1,69 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>case-3</title>
-    <link rel="stylesheet" href="assest/style/normalize.css">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case03</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assest/Style/normalize.css">
 
     <style>
-        section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        body>section{
+            height: 100vh;
+            width: 100vw;
             position: relative;
-            top: 200px;
-        }
-
-        section>#circle1{
-            background:gray;
-            height: 200px;
-            width: 200px;
-            border: 3px solid gray;
-            border-radius:50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        section>#circle1>#circle2{
-            background: red;
-            height: 180px;
-            width: 180px;
-            border: solid 3px red;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-        section>#circle1>#circle2>#circle3{
-            background: purple;
-            height: 160px;
-            width: 160px;
-            border: solid 3px purple;
-            border-radius: 50%;
-
+            font-weight: bold;
+            font-family: sans-serif;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-    </style>
+        .circle{
+            height: 250px;
+            width: 250px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100%;
+            border: #501254 solid 40px;
+            position: fixed;
+            z-index: 10;
+        }
 
+        #gray-circle{
+            border: #501254 solid 40px;
+        }
+
+        #red-circle{
+            border: pink solid 20px;
+        }
+
+        .cir{
+            height: 250px;
+            width: 250px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100%;
+            position: absolute;
+            text-align: center;
+            align-content: center;
+            font-size: 30px;
+        }
+
+        #hello-cir{
+            background-color: powderblue;
+        }
+
+        #welcome-cir{
+            background-color: hotpink;
+        }
+
+        #ijse-cir{
+            background-color: peru;
+        }
+    </style>
 </head>
 <body>
 <section>
-    <div id="circle1">
-        <div id="circle2">
-            <div id="circle3">Hello</div>
-        </div>
-    </div>
+    <div class="cir" id="hello-cir">Hello</div>
+</section>
+<section>
+    <div class="cir" id="welcome-cir">Welcome to</div>
+</section>
+<section>
+    <div class="cir" id="ijse-cir">Institute of Software Engineering</div>
 </section>
 
-
+<!-- big 2 circle-->
+<div id="gray-circle" class="circle"></div>
+<div id="red-circle" class="circle"></div>
 </body>
 </html>
